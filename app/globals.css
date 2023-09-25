@@ -2,26 +2,158 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  .btn {
+    @apply rounded-md md:text-lg font-semibold focus:outline-none transition duration-300 ease-in;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+/* App.css */
+/* .carousel-container {
+  perspective: 1000px;
+} */
+
+/* .carousel-slide {
+  backface-visibility: hidden;
+} */
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.-translate-x-full {
+  transform: translateX(400%);
+}
+
+.animation-underline>li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #2D79EB;
+  transition: all ease 0.5s;
+}
+
+.animation-underline>li:hover::after {
+  width: 100%
+}
+
+
+.gradient-typing-text-1 {
+  animation: typing 3.5s steps(40, end), gradientText1 6s ease infinite;
+
+}
+
+.gradient-typing-text-2 {
+
+
+  animation: typing 3.5s steps(40, end), gradientText2 6s ease infinite;
+  animation-delay: 2.34s;
+}
+
+/* This CSS code creates an underline animation */
+.underline-animation {
+  list-style: none;
+}
+
+/* Add an underline to list items on hover */
+.underline-animation li:hover {
+  position: relative;
+}
+
+.underline-animation li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  height: 2px;
+  width: 60px;
+  /* Adjust the height of the underline */
+  background-color: #000;
+  /* Adjust the color of the underline */
+  animation: underline 0.3s ease-in-out forwards;
+}
+
+/* Define the underline animation */
+@keyframes underline {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 80% 50%;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+  }
+}
+
+
+@keyframes gradientText1 {
+  0% {
+    background-image: linear-gradient(to right, #f43f5e, #f97316);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+  }
+
+  100% {
+    background-image: linear-gradient(to right, #d946ef, #9333ea);
+    background-clip: none;
+    -webkit-background-clip: none;
+
+  }
+}
+
+@keyframes gradientText2 {
+  0% {
+    background-image: linear-gradient(90deg, #f59e0b, #ec4899);
+
+  }
+
+  100% {
+    background-image: linear-gradient(to right, #3b82f6, #9333ea);
+
+  }
+}
+
+@keyframes text {
+
+  0%,
+  100% {
+    background-position: left center;
+  }
+
+  50% {
+    background-position: right center;
+  }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: transparent;
+  }
 }

@@ -4,22 +4,29 @@ import AutoCarousel from "./AutoCarousel";
 
 const HeroSection = ({ setBackgroundColor }) => {
   return (
-    <section className="relative grid grid-cols-1  px-4 justify-evenly w-full h-full lg:flex lg:px-0 lg:justify-evenly lg:w-full lg:h-full">
+    <section className="relative grid grid-cols-1 px-1 justify-evenly w-full h-full lg:flex lg:px-0 lg:justify-evenly lg:w-full lg:h-full">
       {/* Left Part */}
 
       <div className="flex flex-col  justify-between items-center w-full h-full py-10  lg:items-start lg:w-[643px] lg:h-[593px] lg:mt-[77px] lg:py-0 ">
         <div className="flex flex-col justify-evenly w-full h-[311px] lg:justify-evenly lg:w-[643px] lg:h-[311px]">
           {/* Main Heading Text  */}
 
-          <div className="flex flex-col w-full h-[217px]  space-y-0 lg:space-y-2  ">
+          <div className="flex flex-col w-full h-[217px]  space-y-0 lg:space-y-2 border-2">
             <div className="w-full h-[131px] flex flex-col  lg:items-start  ">
-              <h1 className="gradient-typing-text-1 gradient-text text-[34px] font-[800] leading-1 lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
+              <h1 className="gradient-typing-text-1 gradient-text text-[30px] font-[800]  lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
                 Tailoring Travel
               </h1>
-              <h1 className="gradient-typing-text-2 gradient-text text-[34px] font-[800] leading-1 lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
-              Adventures Just for You!
+              <h1 className="gradient-typing-text-2 gradient-text text-[28px] font-[800]  lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
+                Adventures Just for You!
               </h1>
-              
+              {/* <div className="flex flex-col md:hidden">
+                <h1 className="gradient-typing-text-2 gradient-text text-[34px] font-[800] leading-1 lg:hidden overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
+                  Adventures Just
+                </h1>
+                <span className="gradient-typing-text-2 gradient-text text-[34px] font-[800] leading-1">
+                  for You!
+                </span>
+              </div> */}
             </div>
             <p className=" text-start text-[14px] font-[400] text-[#000000B2] w-full h-[66px] leading-1 lg:text-start  lg:w-[576px] lg:h-[66px] lg:leading-7 lg:text-[16px] lg:font-[400]">
               Your Ultimate Travel Itinerary Crafting Companion! Build your Next

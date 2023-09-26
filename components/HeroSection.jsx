@@ -11,7 +11,7 @@ const HeroSection = ({ setBackgroundColor }) => {
         <div className="flex flex-col justify-evenly w-full h-[311px] lg:justify-evenly lg:w-[643px] lg:h-[311px]">
           {/* Main Heading Text  */}
 
-          <div className="flex flex-col w-full h-[217px]  space-y-0 lg:space-y-2 border-2">
+          <div className="flex flex-col w-full h-[217px]  space-y-0 lg:space-y-2 ">
             <div className="w-full h-[131px] flex flex-col  lg:items-start  ">
               <h1 className="gradient-typing-text-1 gradient-text text-[30px] font-[800]  lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
                 Tailoring Travel

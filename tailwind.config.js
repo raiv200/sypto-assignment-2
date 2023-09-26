@@ -13,6 +13,7 @@ module.exports = {
       animation: {
         typing: "typing 3.5s steps(40, end), blinkCaret .75s step-end infinite",
         slideInFromRight: "slideInRight 1s ease-in-out forwards",
+        slideInFromLeft:"slideInLeft 1s ease-in-out forwards"
       },
       keyframes: {
         typing: {
@@ -27,6 +28,14 @@ module.exports = {
         slideInRight: {
           "0%": {
             transform: "translateX(30%)",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+          },
+        },
+        slideInLeft: {
+          "0%": {
+            transform: "translateX(-30%)",
           },
           "100%": {
             transform: "translateX(0%)",

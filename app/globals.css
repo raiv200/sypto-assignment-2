@@ -43,18 +43,44 @@
   width: 100%
 }
 
+/* .gradient-text {
+  --bg-size: 400%;
+  background: linear-gradient(
+                90deg,
+                #e11d48,
+                #c026d3,
+                #d946ef,
+                #fb7185
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+} */
+
+.gradient-text {
+  --bg-size: 400%;
+  background: linear-gradient(
+    -225deg,
+    #e11d48 0%,
+    #fe4e74 29%,
+    #c026d3 67%,
+    #2D79EB 100%
+  ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 
 .gradient-typing-text-1 {
-  animation: typing 3.5s steps(40, end), gradientText1 6s ease infinite;
+  animation: typing 3.5s steps(40, end), gradientText 8s infinite linear;
 
 }
-
 .gradient-typing-text-2 {
-
-
-  animation: typing 3.5s steps(40, end), gradientText2 6s ease infinite;
-  animation-delay: 2.34s;
+  animation: typing 3.5s steps(40, end), gradientText 8s infinite linear;
+  
 }
+
 
 /* This CSS code creates an underline animation */
 .underline-animation {
@@ -70,21 +96,36 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: 0;
   right: 0;
   height: 2px;
-  width: 60px;
+  width: 70px;
+  margin: 0 auto;
   /* Adjust the height of the underline */
-  background-color: #000;
+  background-color: #2D79EB;
   /* Adjust the color of the underline */
   animation: underline 0.3s ease-in-out forwards;
 }
 
+
+
+@keyframes gradientText {
+  to {
+    background-position: 400% 0;
+  }
+}
+
+
 /* Define the underline animation */
+
 @keyframes underline {
   0% {
     transform: scaleX(0);
-    transform-origin: 80% 50%;
+    transform-origin: 0% 50%;
+  }
+  50% {
+    transform: scaleX(0.5);
+    transform-origin: 0% 50%;
   }
 
   100% {
@@ -93,46 +134,6 @@
   }
 }
 
-
-@keyframes gradientText1 {
-  0% {
-    background-image: linear-gradient(to right, #f43f5e, #f97316);
-    background-clip: text;
-    -webkit-background-clip: text;
-
-  }
-
-  100% {
-    background-image: linear-gradient(to right, #d946ef, #9333ea);
-    background-clip: none;
-    -webkit-background-clip: none;
-
-  }
-}
-
-@keyframes gradientText2 {
-  0% {
-    background-image: linear-gradient(90deg, #f59e0b, #ec4899);
-
-  }
-
-  100% {
-    background-image: linear-gradient(to right, #3b82f6, #9333ea);
-
-  }
-}
-
-@keyframes text {
-
-  0%,
-  100% {
-    background-position: left center;
-  }
-
-  50% {
-    background-position: right center;
-  }
-}
 
 
 @keyframes typing {
@@ -146,7 +147,7 @@
 }
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/* @keyframes blink-caret {
 
   from,
   to {
@@ -156,4 +157,4 @@
   50% {
     border-color: transparent;
   }
-}
+} */

@@ -43,14 +43,14 @@ const Navbar = () => {
 
         {/* Call To Action Button */}
 
-        <button className="h-[36px] w-[126px]  border-[1px] border-[#000000B2] rounded-md hover:shadow-2xl hover:-translate-y-1 transition ease-in duration-300 ">
-          <a
-            href="/"
-            className="text-center text-[16px] text-[#000000B2] font-[400] "
-          >
-            Login
-          </a>
-        </button>
+        <button className="h-[36px] w-[126px]  border-[1px] border-[#00000099] hover:shadow-2xl hover:-translate-y-1 rounded-lg transition ease-in duration-300  ">
+              <p
+                
+                className=" text-[14px] h-[20px] w-[75px] mx-auto text-[#000000B2] font-[400] leading-5"
+              >
+                Login
+              </p>
+            </button>
       </div>
     </nav>
   );

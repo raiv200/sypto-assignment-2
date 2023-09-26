@@ -13,10 +13,10 @@ const HeroSection = ({ setBackgroundColor }) => {
 
           <div className="flex flex-col w-full h-[217px]">
             <div className="w-full h-[131px] flex flex-col ">
-              <h1 className="gradient-typing-text-1  text-[48px] font-[800] leading-[64px] overflow-hidden whitespace-nowrap bg-gradient-to-r from-fuchsia-500  to-purple-500 bg-clip-text text-transparent transition ease-in-out duration-600">
+              <h1 className="gradient-typing-text-1 gradient-text  text-[48px] font-[800] leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
                 Tailoring Travel
               </h1>
-              <h1 className="gradient-typing-text-2  text-[48px] font-[800] leading-[64px] overflow-hidden whitespace-nowrap bg-gradient-to-r from-amber-500  to-pink-500 bg-clip-text text-transparent transition ease-in-out duration-600">
+              <h1 className="gradient-typing-text-2 gradient-text  text-[48px] font-[800] leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
               Adventures Just for You!
               </h1>
               
@@ -60,26 +60,26 @@ const HeroSection = ({ setBackgroundColor }) => {
           </div>
 
           <div className="flex items-center justify-between w-[400px] h-[150px]">
-            <div className="flex flex-col">
-              <div className="overflow-hidden">
+            <div className="flex flex-col animate-slideInFromLeft">
+              <div className="overflow-hidden  ">
                 <Image
                   src="/europe__monument.png"
                   width={157}
                   height={125}
-                  className="hover:scale-[1.1] hover:rotate-6 transition ease-in duration-300"
+                  className="  hover:scale-[1.1] hover:rotate-6 transition ease-in duration-300"
                 />
               </div>
               <p className="text-[16px] text-center  font-[600] text-[#000000B2] leading-6">
                 Europe
               </p>
             </div>
-            <div className="flex flex-col ">
-              <div className="overflow-hidden">
+            <div className="flex flex-col animate-slideInFromLeft ">
+              <div className="overflow-hidden  ">
                 <Image
                   src="/delhi__monument.png"
                   width={125}
                   height={125}
-                  className="hover:scale-[1.1] hover:rotate-6 transition ease-in duration-300"
+                  className="  hover:scale-[1.1] hover:rotate-6 transition ease-in duration-300"
                 />
               </div>
               <p className="text-[16px] text-center  font-[600] text-[#000000B2] leading-6">
@@ -87,7 +87,7 @@ const HeroSection = ({ setBackgroundColor }) => {
               </p>
             </div>
             <div>
-              <button className="h-[25px] w-[25px] rounded flex items-center justify-center bg-[#2D79EB] text-white ">
+              <button className="h-[25px] w-[25px] rounded flex items-center justify-center bg-[#2D79EB] text-white  ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

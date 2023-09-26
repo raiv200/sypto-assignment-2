@@ -13,10 +13,10 @@ const HeroSection = ({ setBackgroundColor }) => {
 
           <div className="flex flex-col w-full h-[217px]  space-y-0 lg:space-y-2 ">
             <div className="w-full h-[131px] flex flex-col  lg:items-start  ">
-              <h1 className="gradient-typing-text-1 gradient-text text-[30px] font-[800]  lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
+              <h1 className="gradient-typing-text-1 gradient-text text-[26px] font-[800]  lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
                 Tailoring Travel
               </h1>
-              <h1 className="gradient-typing-text-2 gradient-text text-[28px] font-[800]  lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
+              <h1 className="gradient-typing-text-2 gradient-text text-[25px] font-[800]  lg:text-[48px] lg:font-[800] lg:leading-[64px] overflow-hidden whitespace-nowrap  transition ease-in-out duration-600">
                 Adventures Just for You!
               </h1>
               {/* <div className="flex flex-col md:hidden">

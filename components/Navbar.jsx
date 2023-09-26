@@ -12,8 +12,8 @@ const Navbar = () => {
     setMobileNavOpen(!isMobileNavOpen);
   };
   return (
-    <header className="flex items-center justify-between px-4 lg:py-2 lg:px-2 md:py-6 h-[72px] border-2 border-red-600">
-      <div className="flex justify-center border-2 border-red-600">
+    <header className="flex items-center justify-between px-4 py-2 lg:px-2 lg:py-6 h-[72px]">
+      <div className="flex justify-center">
         {/* Logo */}
         <div
           onClick={toggleMobileNav}

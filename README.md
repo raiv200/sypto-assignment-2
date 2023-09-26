@@ -16,6 +16,8 @@ To design a Landing Page Hero Section of a  Travel Website.
 -- Added simple hover animaion on buttons
 -- Slide In Animation Effect on the Hero Image from Left to Right
 -- Also added Carousel Animations
+-- Complete Responsive Design for Mobile
+-- Added SideDrawer Navigation for Mobile Design
 
 Github Project Link: https://github.com/raiv200/sypto-assignment-2
 

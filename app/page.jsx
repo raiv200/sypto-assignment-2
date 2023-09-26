@@ -13,10 +13,10 @@ export default function Home() {
 
   return (
     <div
-      className={`flex flex-col min-h-screen w-full  bg-gradient-to-br ${backgroundColor} transition ease-in-out duration-[3s]`}
+      className={`flex flex-col  bg-gradient-to-br ${backgroundColor} h-full w-full lg:min-h-screen lg:w-full  transition ease-in-out duration-[3s]  overflow-hidden`}
     >
       {/* <AutoCarousel onBackgroundColorChange={setBackgroundColor} /> */}
-      <div className="flex flex-col h-screen w-full mx-auto md:max-w-[1350px] 2xl:max-w-9xl ">
+      <div className="flex flex-col w-full h-full lg:h-screen lg:w-full mx-auto md:max-w-[1350px] 2xl:max-w-9xl ">
         <Navbar />
         <HeroSection setBackgroundColor={setBackgroundColor} />
       </div>

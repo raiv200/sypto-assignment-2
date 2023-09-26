@@ -54,14 +54,14 @@ const AutoCarousel = ({onBackgroundColorChange }) => {
       {images.map((imageUrl, index) => (
         <div
           key={index}
-          className={`carousel-slide absolute   w-${imageUrl.width} h-${imageUrl.height}  transition ease-in-out duration-[3s]  ${
+          className={`carousel-slide absolute lg:w-${imageUrl.width} lg:h-${imageUrl.height}  transition ease-in-out duration-[3s]  ${
             index === currentIndex ? 'transform translate-x-0' : 'transform -translate-x-full'
           }`}
         >
           <img
             src={imageUrl.src}
             alt={`Carousel Item ${index}`}
-            className="w-full h-full object-contain animate-slideInFromRight "
+            className=" w-[320px]  lg:w-full lg:h-full object-contain animate-slideInFromRight "
           />
         </div>
       ))}
